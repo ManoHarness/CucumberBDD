@@ -4,19 +4,48 @@
   <listeners>
     <listener class-name="swaglabstestcases.Listeners"/>
   </listeners>
+  <test name="Systemtesting(failed)" parallel="none">
+    <classes>
+      <class name="swaglabstestcases.SystemTesting">
+        <methods>
+          <include name="buyproductscenario"/>
+          <include name="getdriver"/>
+        </methods>
+      </class> <!-- swaglabstestcases.SystemTesting -->
+      <class name="swaglabstestcases.Validationtesting">
+        <methods>
+          <include name="getdriver"/>
+          <include name="getdriver"/>
+        </methods>
+      </class> <!-- swaglabstestcases.Validationtesting -->
+    </classes>
+  </test> <!-- Systemtesting(failed) -->
+  <test name="validationtesting1(failed)" parallel="none">
+    <classes>
+      <class name="swaglabstestcases.SystemTesting">
+        <methods>
+          <include name="getdriver"/>
+        </methods>
+      </class> <!-- swaglabstestcases.SystemTesting -->
+      <class name="swaglabstestcases.Validationtesting">
+        <methods>
+          <include name="validatenavbar"/>
+          <include name="getdriver"/>
+          <include name="getdriver"/>
+        </methods>
+      </class> <!-- swaglabstestcases.Validationtesting -->
+    </classes>
+  </test> <!-- validationtesting1(failed) -->
   <test name="validationtesting2(failed)" parallel="none">
     <classes>
       <class name="swaglabstestcases.SystemTesting">
         <methods>
-          <include name="teardown"/>
           <include name="getdriver"/>
         </methods>
       </class> <!-- swaglabstestcases.SystemTesting -->
       <class name="swaglabstestcases.Validationtesting">
         <methods>
           <include name="verifyapptitle"/>
-          <include name="teardown"/>
-          <include name="teardown"/>
           <include name="getdriver"/>
           <include name="getdriver"/>
         </methods>

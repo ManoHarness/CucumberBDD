@@ -47,7 +47,7 @@ public class Validationtesting extends Base {
 	@Test
 	public void verifyapptitle() {
 		
-		Assert.assertEquals(driver.getTitle(), "Swag Labs");
+		Assert.assertEquals(driver.getTitle(), "SwagLabs");
 		log.info("app title is verified");
 		log.info("test is completed");
 		
